@@ -1,0 +1,30 @@
+h1{text-align:center;}
+.x-or-o{
+  display:block-inline;
+}
+.inline{display:inline;}
+.box{
+  width: 450px;
+  height: 450px;
+  background-color: #e6e6e6;
+  position: relative;
+  text-align:center;
+  left: 20px; top: 20px;
+}
+
+.lbox{
+  background-color:#0339;
+  box-sizing:border-box;
+  width:150px;
+  height:150px;
+  position: absolute;
+  border:10px solid #660;
+  border-right: 10px solid orange;
+  border-bottom: 10px solid orange;
+  font-size:100px;
+  font-weight: bold;
+}
+
+.x{
+  font-size:100px;
+}

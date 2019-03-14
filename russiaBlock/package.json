@@ -1,0 +1,17 @@
+{
+  "name": "russia",
+  "version": "1.0.0",
+  "description": "russiaBlock",
+  "main": "websocket.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "niu",
+  "license": "MIT",
+  "dependencies": {
+    "nodejs-websocket": "^1.7.1"
+  },
+  "devDependencies": {
+    "bootstrap": "^4.1.3"
+  }
+}

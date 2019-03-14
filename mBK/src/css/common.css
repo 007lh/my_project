@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+}
+
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+a, img, input {
+    border: 0 none;
+}
+div {
+  display: block;
+}
+
+body, html {
+  height: 100%;
+}
+
+#content {
+  position: static;
+  font-family: Helvetica Neue,Tahoma,Arial,PingFangSC-Regular,Hiragino Sans GB,Microsoft Yahei,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #3c3c3c;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  height: 100%;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+
+.app-shell {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
