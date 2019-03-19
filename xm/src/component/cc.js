@@ -24,14 +24,23 @@ class CC extends React.Component {
     this.scrollToAnchor.bind(this);
     this.handleSelect.bind(this);
   }
+
+
   scrollToAnchor(anchorName){
+
       if (anchorName) {
           let anchorElement = document.getElementById(anchorName);
-          if(anchorElement) {
-            //anchorElement.scrollIntoView();
-         //window.scrollTop(anchorElement.offsetTop - 50);?????????????????
-            window.scrollTo(0, anchorElement.offsetTop - window.innerHeight / 2);
+          //let fanchorElement = document.getElementById("component-list-main");
+          if(window.scrollTo && anchorElement) {
+
+            //window.scrollTo(0, anchorElement.offsetTop - window.innerHeight / 2);
+            //上面的方法没有效果，window.srcollTop() is not function???????,不知其影响因素
+          // anchorElement.scrollIntoView();
+          anchorElement.scrollIntoView({block: 'center', behavior: 'smooth'});
+          console.log(document.getElementById('testaddress').srcollTop);
           }
+      }else {
+          document.body.scrollTop = document.documentElement.scrollTop = 0;
       }
     }
 
@@ -45,7 +54,7 @@ class CC extends React.Component {
     const computerData = Data_category["computer"].map((i)=>{return <PictureWrap key={i.name} name={i.name} imgSrc={i.src}/>});
     const jiadianData = Data_category["jiadian"].map((i)=>{return <PictureWrap key={i.name} name={i.name} imgSrc={i.src}/>});
     return(
-      <div className="categorycontent-wrap">
+      <div className="categorycontent-wrap" id="testaddress">
           <Row className="clearfix">
             <Col sm={3} xs={3}>
               <Nav bsStyle="pills" stacked activeKey={this.state.active_key} onSelect={k => this.handleSelect(k)} style={{position:"fixed",top:"50px"}}>
