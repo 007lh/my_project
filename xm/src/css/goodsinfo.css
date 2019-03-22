@@ -1,0 +1,153 @@
+.giwrap {
+  max-width: 31.25rem;
+  width: 31.25rem;
+  margin: 0 auto;
+}
+
+.gibg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 2000;
+  margin: 0 auto;
+  max-width: 31.25rem;
+}
+
+.gicontent {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2001;
+    width: 31.25rem;
+    max-width: 31.25rem;
+    height: 42rem;
+    background-color: white;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+    margin: 0 auto;
+    padding: 0 2rem 0 2rem;
+}
+
+.giclose {
+  height: 3rem;
+}
+
+.close-icon {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEIAAABCCAYAAADjVADoAAAC80lEQVR4Ae3btZYUQRTGcdwi3F1D3P1FyIjQmDfANcQtwyXC3d3dnVlStPmCWpf5j1T1rXM6+Hbcfqe0b2+zJEmyKBlCBsEhMoh169aNUg4rr9zluFh/oL57W2WD8kS5osxFEHriIOWXktTJ7AgR2ik3laRO5hCITUrSSGZFhNBeudPI7/hAIE4rScwYriXcauI3/CEQ85UkSgzXEppCcDlKB8v9AGNmLGNCnXxX+iAI96YHAcY0QwhtlBsAYSiYNeLEcAjXikJwIR9y2DIGRKhQhvEFVWQYDuF6nu+VU4bjlSX40EMcIwhCa4DwXRlS9r0GHzPMjAmD6XsW8yUOAIypKSN8UwZ5332CdcY/ZbIHhFbK1Tyf/ZUjlAgBMf5yDIxwGSAMDns8wnUTgDGpDAgtlUugOwxJ7cAMxJhcIsJljhAegk+trmV4agk5ZaiZQ3VuauUYHAEtm81AwG7yh2BgBDcwGoLgs4nDmNDE61s4BLROMAsBMX4r4xtBuMDXCeEhvGPoenOA8FkZEF1dA2IMcs89DxAGxlfg4QPoO+Vsnud8qQSLE4JPrXzZHDMEXHTxKTJmCNhN+OwQM4TD2AYQnitt7FfD/beKt8qI+CB48cXVHXCmxw/BEUwcEA6B0JYjpNcyLCA8tFBrTRvhh9LNPf9Imhg+EW4ChOoKFMeYYR+Cl+ZdLZKXF323jLQQhvJaa5iWEXqKzCnD+N4kXMswgGCjZYSaHSqU4UW+/5EQ64xQU2Tx+4ZAs0npAyOfIktFP+pzzPB5Ch9HgPG56CoW4Q5AAAOjHYxCv0QH5TY/XcdPfEytBbUECwi+VqBFjQn+EcKvMzCCh6q0KQx+ljtcMRrGmAUgQEsAu8iYMejAyHeR9jFmAwh8UCXndWD0X14cSyCWAARQhjONcYNAHG/qTBXTCLyQ9JdALCMIkWM8IBCdlNd1XvgJjAlWMfaS2aOxF3dVVrhReKXSE3yoZYzFbn+yW5mW/Uu0SwaRQWQQOP8BKPAB6NT57AgAAAAASUVORK5CYII=);
+    width: 2rem;
+    height: 2rem;
+}
+
+.giname {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.gipic {
+  position: relative;
+  width: 8rem;
+  height: 8.5rem;
+}
+
+.gi-img {
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.ginamestyle {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1rem;
+}
+
+.giprice{
+  text-align: left;
+  color: #f00;
+  font-size: 2.4rem;
+}
+
+.raw-price {
+  color: #ddd;
+  font-size: .6rem;
+  margin-left: .5rem;
+}
+
+.gitext{
+  color: #000;
+}
+
+.gispecificifon {
+  height: 26rem;
+  overflow-y: scroll;
+}
+
+.version-info {
+  border: 1px solid #ddd;
+  height: 3rem;
+  margin-bottom: .5rem;
+}
+
+.info-title {
+  margin: 2rem 0 1.5rem 0;
+  text-align: left;
+}
+
+.ginum{
+  height: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.ginumwrap {
+  width: 7.5rem;
+  height: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.8rem;
+}
+
+.minus,.add{
+  background-color: #ddd;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.buynum {
+  background-color: #fff;
+  min-width: 2.5rem;
+  height: 2.5rem;
+  border: .5px solid #ddd;
+}
+.btn-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.gibuybtn{
+  background-color: orange;
+  padding: .8rem .6rem;
+}
+
+.gibuybtn .text{
+  color: #fff;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  width: 100%;
+  display: block;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+}
