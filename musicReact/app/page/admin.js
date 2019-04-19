@@ -107,7 +107,7 @@ class Admin extends React.Component {
             <div className="samllframe">
               <label htmlFor="inputYear" className="lab">出版年代</label>
               <div className="col-sm-10">
-                <input id="inputYear" type="text"  name="music[year]" onChange={this.handleChange.bind(this,'file')} value={this.state.year}/>
+                <input id="inputYear" type="text"  name="music[year]" onChange={this.handleChange.bind(this,'year')} value={this.state.year}/>
               </div>
             </div>
             <div className="samllframe">

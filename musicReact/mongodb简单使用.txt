@@ -1,0 +1,13 @@
+1.进入cmd+R，输入mongo(在此之前设置环境变量为全局)。
+2.展示有些什么集合   show dbs
+3.使用集合  use  +  集合名
+4展示集合下的表单 show collections
+5.查看表单下的全部数据    db.表单名.find()
+
+6删除表单下的某个数据
+db.表单名.remove({title:""})    
+PS:remove函数下的对象是删除的特征上条语句删除的就是表单里title为空的数据
+
+
+
+更多语句功能可以查看https://www.cnblogs.com/cmyxn/p/6610297.html
