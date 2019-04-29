@@ -93,9 +93,14 @@
 }
 
 .version-info {
+  display: block;
   border: 1px solid #ddd;
   height: 3rem;
+  line-height: 3rem;
   margin-bottom: .5rem;
+  text-align: left;
+  font-size: 1.4rem;
+  padding-left: 1rem;
 }
 
 .info-title {
@@ -103,11 +108,24 @@
   text-align: left;
 }
 
+.gicolor-item{
+  display: inline-block;
+  width: 5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  border: 1px solid #ccc;
+  margin: 0 1rem 1rem 0;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+
 .ginum{
   height: 2.5rem;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  margin-top: 2rem;
 }
 
 .ginumwrap {
@@ -116,6 +134,7 @@
   display: flex;
   flex-direction: row;
   font-size: 1.8rem;
+  text-align: center;
 }
 
 .minus,.add{
@@ -135,6 +154,7 @@
   bottom: 0;
   left: 0;
   right: 0;
+  text-align: center;
 }
 
 .gibuybtn{
@@ -150,4 +170,137 @@
   display: block;
   border-radius: 1rem;
   font-size: 1.5rem;
+}
+
+.gielse{
+  margin: 2.5rem 0 2.5rem 0;
+}
+
+.gielse-itemwrap{
+  display: flex;
+  justify-content: flex-start;
+  font-size: 1rem;
+}
+
+.gielse-item{
+  position: relative;
+  border: 1px solid #ccc;
+  width: 15.5rem;
+  height: 3rem;
+  line-height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 1.4rem;
+}
+
+.gielse-pname,.gielse-pprice{
+  display: inline-block;
+  padding-left: .2rem;
+}
+
+/* WARNING: 这个属性放在最后相对于这个文件的同级class优先级最高 */
+.goods-clicked{
+  border-color: #ff6700;
+  color: #ff6700;
+}
+
+
+
+
+/*-----------------cart。css---------------------------------*/
+
+
+.buyinfo-bar{
+  margin-top: 50px;
+  width: 100%;
+  height: 100%;
+  background-color: #f2f2f2;
+}
+
+.buyinfo-baritem{
+  background-color: #fff;
+  margin-bottom: 1.2rem;
+}
+
+.buyinfo-layout{
+  width: 100%;
+  height: 10rem;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.choosebtn{
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0 1rem;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.checked{
+  background: url(https://s1.mi.com/m/images/m/check_press.png);
+  background-size: 1.5rem 1.5rem;
+}
+
+.buyinfo-pic{
+  display: block;
+  margin-right: 1rem;
+}
+
+.buyinfo-pic img{
+  width: 8rem;
+  height: 8rem;
+}
+
+.buyinfo-layout .info{
+  width: 18rem;
+  height: 8rem;
+}
+
+.info-text{
+  width: 16rem;
+}
+
+.num .delete{
+  width: 3rem;
+  height: 3rem;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAD6klEQVR4Ae2aA4xkSxSGn23bDB/DZ9u2wmcbo8bYttG2lUy717a9wbNr/5Ms7/R6t3FzJvlTubc09XXVQeoeIoTYhVi7qGQxIAbEgBgQA2JADIgBMSAWA2JADIgBMaC//vrrmGnTpn3rdrtHvV6vxufzje6J0FYbCASGUX7xyy+/HC1bQMlksq6kpESQlEqlUKlUeyRqW1xcLCoqKgQAl8sS0IwZM44fGRnZUFlZKSwWiwY7ogi7o2xPFAwGi4xGo7WsrExotdrF+DtSdoCwe04fHR3dUFNTI+bNm3fr3vZPpVJPVVVVCZ1Ot2TmzJnHyQ7QlClTTh0bG1tTXV0t5s6d++De9o/FYq9uBrQAgI+VpQ3C4lbRInFE7tzbvpMnT36ejqfJZJqbVzbI5XKdDV0AnZNOTqfzHLvdfs74+Pg1Go1mXV1dncBuetTv9x9qtVqPQJtdymazHQE7dGg4HH6jtrZWwBYtwW66FH2lc0nnvcDj8ZyRdUBDQ0OroH+gX7fTL6Qtz8PDw78ODAz83tbWJpqamkR3d/dCPCdQN3lPNDg4mECfxdSXxqCxdjUfCX3+gc1bmnVA5Hq3qLy8XJCNaWxsFPRr07O0jt5vfqZyj0Rt6XhRXxpDOi69pzm3r6OSHELWAS1atOgR6Cno8VWrVt2L7W1G3EKu3L1mzZq78f6hhQsXPozygGrzmA9hjnth22IKhUIgkBzB/3AX3j+B+qdg6x7JOqA07vinwsJCARtRlylDiiM8SnMiiPw4571YNBqtQPRL7rgzU4B6enrMarVaINb6MS8AbT5inRncQWb8KPkFyGw2TwC0cePGa2Ejbv79999PltatXbv2aNiTm1Bev379+gmpBJLU06kvxrgmjSeVByDkYrPIGyFVeExa197efgm5cZTkxs9PM+475J1wdJNyBjRzPwC9TYCQrMZlCwi52BSKVWbNmjXB/XZ2dl7c0tIiUP6FBZ+XJhd7k9IUvV4fZkAMiAExIAbEgBgQA2JADIgBMSAGxIAYUAYBrdkM6Nk0gC7fDEhgwRemAfTeZkALZAlo6tSph2Fx1bie8c+ZM+dmab++vr5zAMeCUqvRaM6Q1icSiXsbGhoCGFctL0AZEANiQAxIKr72MRqNHZkC1N/fb8qbi8NIJFJN9+S4em7IFCDclmhKSkoIUEE+AKosKCgQiHkmh8Phn0KhUAm+MVQcDNHYmK8ANmguzYlYqTjnAa1cufKx+vp6QbsI2z4jwlx0n0b3bffnLiDJJZ/dbrfg67AQSu/BFI5yyOFwGFKp1Ev8pf3+igExIAbEgBgQA2JALAbEgBgQA2JADIgBMSDWJly2untRJ8f7AAAAAElFTkSuQmCC);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  float: right;
+}
+
+.price{
+    margin-top: .5rem;
+}
+
+.num{
+  margin-top: .5rem;
+}
+
+.num-wrap{
+  text-align: center;
+  font-size: 1.5rem;
+  display: inline-block;
+}
+
+.num-minus,.num-add{
+  background-color: #ddd;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: inline-block;
+}
+
+.num-buynum{
+  background-color: #FFF;
+  width: 2.5rem;
+  height: auto;
+  min-height: 2.5rem;
+  display: inline-block;
+  border: .5px solid #ddd;
+  box-sizing: border-box;
 }

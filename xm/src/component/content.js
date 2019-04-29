@@ -81,7 +81,7 @@ class HomeContent extends React.Component {
         <div style={{display:(this.state.btnshowblock==="Recommend"?"block":"none")}}>
           <ImgCarousel/>
           <div className="cells_auto_fill multi_cell" style={{width:"31.25rem",height:"6.4rem"}}>
-              <Link to="/goods/768768768" className="exposure items1">
+              <Link to="/goods/001" className="exposure items1">
                 <img src="//i8.mifile.cn/v1/a1/6d64ef02-bb5c-da49-45cb-7d6861885b29!144x152.webp"/>
               </Link>
               <a className="exposure items1">
@@ -99,9 +99,11 @@ class HomeContent extends React.Component {
             </div>
 
             <div className="cells_auto_fill multi_cell" style={{width:"30rem",height:"22.2rem"}}>
-              <a className="items2" style={{width:"15rem",height:"22rem"}}>
+
+              <Link to="/goods/001" style={{width:"15rem",height:"22rem"}} className="items2" >
                 <img style={{width:"15rem",height:"22.2rem"}} src='https://i8.mifile.cn/v1/a1/1bc285b1-2a9e-00de-57bf-23d322094a74!358x508.webp'/>
-              </a>
+              </Link>
+
               <a className="items2" style={{width:"15rem",height:"11rem",left:"15.7rem"}}>
                 <img style={{width:"15rem",height:"11rem"}} src='https://i8.mifile.cn/v1/a1/9929be9b-7a4e-9f80-5f37-0c9e3848d48f!358x252.webp'/>
               </a>

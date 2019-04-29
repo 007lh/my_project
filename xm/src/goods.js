@@ -1,28 +1,66 @@
 import React from 'react';
 import GoodsHead from './component/goodshead';
 import GoodsFooter from './component/goodsfooter';
+import GoodsInfo from './component/goodsinfo';
 import {Link} from 'react-router-dom';
+import "./css/goodsinfo.css";
+import Data_category from'./component/bkdata';
 
 class Goods extends React.Component {
+  constructor(props){
+    super(props);
+    this.state={joincartbtn:false,
+                goods_info:{}
+    };
+    this.changejoincart.bind(this);
+  }
+
+  changejoincart(btnstate) {
+    this.setState(btnstate);
+  }
+
+ componentWillMount(){
+   for(let key in Data_category){
+     for(let j=0;j<Data_category[key].length;j++){
+       //Data_category[key][j].id
+       if( Data_category[key][j].id === this.props.match.params.id){
+         this.setState({goods_info:Data_category[key][j].version});
+       }
+     }
+   }
+ }
+ componentDidMount(){
+   //console.log(this.props.match.params.id);
+   // for(let key in Data_category){
+   //   for(let j=0;j<Data_category[key].length;j++){
+   //     //Data_category[key][j].id
+   //     if( Data_category[key][j].id === this.props.match.params.id){
+   //       this.setState({goods_info:Data_category[key][j].version});
+   //     }
+   //   }
+   // }
+
+ }
+
   render() {
+    
     return(
       <div className="app-view-wrap">
-        <GoodsHead/>
 
+        <GoodsInfo winstate={this.state.joincartbtn} data_info={this.state.goods_info}/>
+        <GoodsHead/>
         <div className="goodscontent">
           <div className="swiper-container gallery-view swiper-container-horizontal">
             <div className="swiper-wrapper">
-              <div className="swiper-slide"><img className="img" src={"https://i8.mifile.cn/v1/a1/02ae8e94-0832-03a8-b476-dceead2355c0.webp"}/></div>
+              <div className="swiper-slide"><img className="img" src={this.state.goods_info.pic}/></div>
             </div>
-            <div className=""></div>
           </div>
 
           <div className="section section-detail">
             <div className="product_info_activity_tip">
               <div className="top-banner">
-                <a className="exposure">
                   <img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/177a8afd6582eec58dd31074b5156a67.jpg" />
-                </a>
+
               </div>
             </div>
           </div>
@@ -32,7 +70,7 @@ class Goods extends React.Component {
               <div className="overview overview-goods-name">
                 <div className="goods-name ui-flex align-center justify-start fz-xl">
                   <img src="https://i8.mifile.cn/b2c-mimall-media/1d0aee92273705ac2c852fb30e3048e0.png"/>
-                  小米8 SE
+                  {this.state.goods_info.name}
                 </div>
               </div>
             </div>
@@ -42,8 +80,8 @@ class Goods extends React.Component {
               <div className="product_info_product_desc">
                   <div className="overview overview-goods-brief">
                       <div className="goods-brief fz-xs">
-                        <font color="#ff4a00">「4GB+64GB，限时秒杀，立减150元」「6GB+64GB，限时秒杀，立减150元」「下单结算显示秒杀价」</font>
-                        三星 AMOLED 全面屏 小屏旗舰 / 骁龙710处理器 / AI 超感光双摄 / 前置2000万柔光自拍
+                      <font color="#ff4a00">{this.state.goods_info.info[0]}</font>
+                        {this.state.goods_info.info[1]}
                       </div>
                   </div>
               </div>
@@ -53,8 +91,8 @@ class Goods extends React.Component {
               <div className="product_info_product_price">
                   <div className="overview product_info_product_price">
                       <div className="goods-price layout align-end justify-start">
-                          <div className="price cur-price">1899</div>
-                          <div className="price origin-price">1999</div>
+                          <div className="price cur-price">{this.state.goods_info.discountprice}</div>
+                          <div className="price origin-price">{this.state.goods_info.rowprice}</div>
                       </div>
                   </div>
               </div>
@@ -124,7 +162,7 @@ class Goods extends React.Component {
                     <div className="ui-flex align-center justify-start J_linksign-customize">
                         <div className="title fz-xs">已选</div>
                         <div className="flex fz-xs">
-                          <div className="info">小米8 SE 6GB+128GB 金色  x 1</div>
+                          <div className="info">{this.state.goods_info.name + this.state.goods_info.vname + this.state.goods_info.color[0] + ' x 1'}</div>
                         </div>
                     </div>
                 </div>
@@ -160,7 +198,7 @@ class Goods extends React.Component {
               </div>
         </div>
 
-            <GoodsFooter/>
+            <GoodsFooter putGoodsToCart={this.changejoincart.bind(this)}/>
       </div>);
   }
 };

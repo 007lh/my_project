@@ -22,7 +22,7 @@ class Footer extends React.Component {
   render() {
   //  var curr = this.state.curr;
     return(
-      <div>
+    //  <div>
         <footer className="app-bottom-wrapper">
           <div className="fill-height box-flex align-center">
             <Link to='/' className="flex">
@@ -42,8 +42,8 @@ class Footer extends React.Component {
               <span className={this.props.settingClass==="user"?'font-focus':''}>我的</span>
             </Link>
           </div>
-        </footer>
-      </div>);
+        </footer>);
+    //  </div>);
   }
 };
 

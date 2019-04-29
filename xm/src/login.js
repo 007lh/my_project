@@ -4,9 +4,9 @@ import './css/else.css'
 class Login extends React.Component{
   constructor(props){
     super(props);
-
+    this.state={logintext:true};
     this.handleInputChange = this.handleInputChange.bind(this);
-
+    this.changeLoginText = this.changeLoginText.bind(this);
   }
 
   handleInputChange(event) {
@@ -15,6 +15,12 @@ class Login extends React.Component{
     this.setState({
       [name]: value
     });
+  }
+
+  changeLoginText() {
+    this.setState(state => ({
+      logintext: !state.logintext
+    }))
   }
   render(){
     return(
@@ -30,8 +36,8 @@ class Login extends React.Component{
                     <div className="input-wrap">
                         <label style={{display:"block","fontWeight":"200"}}>
                             <div className="input-style">
-                              <span style={{padding:"1rem 10px 1rem",color: "#9b9b9b",display:"block"}}>+86&gt;</span>
-                              <input className="input-tel" name="phoneNumber" type="tel" placeholder="手机号码" onChange={this.handleInputChange}/>
+                              <span style={{padding:"1rem 10px 1rem",color: "#9b9b9b",display:this.state.logintext? "block" : "none"}}>{this.state.logintext?`+86>` : ""}</span>
+                              <input className="input-tel" name="phoneNumber" type="tel" placeholder={this.state.logintext? "手机号码" : "邮箱/小米"} onChange={this.handleInputChange}/>
                             </div>
                         </label>
                         <label style={{display:"block",fontWeight:"200"}}>
@@ -42,7 +48,7 @@ class Login extends React.Component{
                     </div>
                     <input className="bg-btn" type="submit" value="立即登录/注册"/>
                     <div className="other-type-login">
-                        <a href="" className="bg-btn btn-else-login">用户名密码登录</a>
+                        <a className="bg-btn btn-else-login" id="ChangeLoginType" onClick={()=>this.changeLoginText()}>{this.state.logintext? "用户名密码登录" : "手机短信登陆"}</a>
                         <div className="oth-type-tit">
                             <fieldset className="oth-boundary">
                               <legend className="oth-type-txt">其他方式登录</legend>

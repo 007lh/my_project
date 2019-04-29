@@ -1,18 +1,19 @@
 import React from 'react';
 import '../css/else.css'
 import {Nav,Tab,Row,NavItem,Col} from 'react-bootstrap';
+import {Link} from 'react-router-dom'
 
 import Data_category from'./bkdata';
 
 function PictureWrap(props) {
   return(
         <div className="product">
-          <a className="exposure item">
+          <Link to={`/goods/${props.goodsid || ''}`} className="exposure item">
             <div className="img">
               <img className="big" src={props.imgSrc}/>
             </div>
             <div className="name">{props.name}</div>
-          </a>
+          </Link>
         </div>
   )
 }
@@ -37,7 +38,7 @@ class CC extends React.Component {
             //上面的方法没有效果，window.srcollTop() is not function???????,不知其影响因素
           // anchorElement.scrollIntoView();
           anchorElement.scrollIntoView({block: 'center', behavior: 'smooth'});
-          console.log(document.getElementById('testaddress').srcollTop);
+          //console.log(document.getElementById('testaddress').srcollTop);
           }
       }else {
           document.body.scrollTop = document.documentElement.scrollTop = 0;
@@ -49,7 +50,7 @@ class CC extends React.Component {
       }
 
   render() {
-    const phoneData = Data_category["phone"].map((i)=>{return <PictureWrap key={i.name} name={i.name} imgSrc={i.src}/>});
+    const phoneData = Data_category["phone"].map((i)=>{return <PictureWrap key={i.name+"page1"} name={i.name} imgSrc={i.src} goodsid={i.id}/>});
     const televisionData = Data_category["television"].map((i)=>{return <PictureWrap key={i.name} name={i.name} imgSrc={i.src}/>});
     const computerData = Data_category["computer"].map((i)=>{return <PictureWrap key={i.name} name={i.name} imgSrc={i.src}/>});
     const jiadianData = Data_category["jiadian"].map((i)=>{return <PictureWrap key={i.name} name={i.name} imgSrc={i.src}/>});

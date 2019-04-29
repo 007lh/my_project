@@ -75,6 +75,9 @@ input{
   color: #000;
   border: 1px solid #d3d3d3;
 }
+#ChangeLoginType {
+  text-decoration-line: none;
+}
 
 .oth-type-tit {
   padding-top: 40px;
@@ -167,7 +170,10 @@ a.current {
 /*categorycontent*/
 .categorycontent-wrap {
   padding: 52px 0px 72px 0px;
-
+  position:relative;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 /*CC*/
 .list-wrap[data-v-06d70f2d] {

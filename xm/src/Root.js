@@ -21,7 +21,7 @@ class Root extends React.Component {
             var clientWidth = docEl.clientWidth;
             if (!clientWidth) return;
             if(clientWidth<=750) {
-              docEl.style.fontSize = 12 * (clientWidth / 375) + 'px';
+              docEl.style.fontSize = 12 * (clientWidth / 375) + 'px';  //以宽度375适配 12是基础的（html）frontsize
             } else {
                 docEl.style.fontSize = 12 * (750 / 375) + 'px';
             }
