@@ -7,6 +7,9 @@ import './css/home.css';
 
 
 class Home extends React.Component {
+  componentWillMount(){
+    document.title= "小米";
+  }
 
   render() {
     return(

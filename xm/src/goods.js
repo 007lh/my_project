@@ -43,11 +43,11 @@ class Goods extends React.Component {
  }
 
   render() {
-    
+    document.title= this.state.goods_info.name;
     return(
       <div className="app-view-wrap">
 
-        <GoodsInfo winstate={this.state.joincartbtn} data_info={this.state.goods_info}/>
+        <GoodsInfo winstate={this.state.joincartbtn} data_info={this.state.goods_info} goods_id={this.props.match.params.id}/>
         <GoodsHead/>
         <div className="goodscontent">
           <div className="swiper-container gallery-view swiper-container-horizontal">
@@ -162,7 +162,7 @@ class Goods extends React.Component {
                     <div className="ui-flex align-center justify-start J_linksign-customize">
                         <div className="title fz-xs">已选</div>
                         <div className="flex fz-xs">
-                          <div className="info">{this.state.goods_info.name + this.state.goods_info.vname + this.state.goods_info.color[0] + ' x 1'}</div>
+                          <div className="info">{this.state.goods_info.name + this.state.goods_info["vname0"] + this.state.goods_info.color[0] + ' x 1'}</div>
                         </div>
                     </div>
                 </div>

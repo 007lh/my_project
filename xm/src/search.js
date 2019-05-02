@@ -4,6 +4,10 @@ import {Link} from 'react-router-dom';
 import './css/home.css'
 
 class Search extends React.Component {
+  componentWillMount(){
+    document.title= "小米 搜索";
+  }
+
   render() {
     return(
       <Head

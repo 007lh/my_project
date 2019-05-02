@@ -8,6 +8,11 @@ import './css/home.css';
 import {Navs,Navbar,FormGroup,Button,FormControl} from 'react-bootstrap';
 //onClick={history.back()}为什么报错
 class Category extends React.Component {
+
+  componentWillMount(){
+    document.title= "商品分类";
+  }
+
   render() {
     return(
       <div className="app-view-wrap">

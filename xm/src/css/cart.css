@@ -1,0 +1,162 @@
+/*-----------------cart。css---------------------------------*/
+
+
+.buyinfo-bar{
+  padding: 50px 0 70px 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f2f2f2;
+  overflow-y: auto;
+}
+
+.buyinfo-baritem{
+  background-color: #fff;
+  margin-bottom: 1.2rem;
+}
+
+.buyinfo-layout{
+  width: 100%;
+  height: 10rem;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.choosebtn{
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0 1rem;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.checked{
+  background: url(https://s1.mi.com/m/images/m/check_press.png);
+  background-size: 1.5rem 1.5rem;
+}
+
+.buyinfo-pic{
+  display: block;
+  margin-right: 1rem;
+}
+
+.buyinfo-pic img{
+  width: 8rem;
+  height: 8rem;
+}
+
+.buyinfo-layout .info{
+  width: 18rem;
+  height: 8rem;
+}
+
+.info-text{
+  width: 16rem;
+}
+
+.num .delete{
+  width: 3rem;
+  height: 3rem;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAD6klEQVR4Ae2aA4xkSxSGn23bDB/DZ9u2wmcbo8bYttG2lUy717a9wbNr/5Ms7/R6t3FzJvlTubc09XXVQeoeIoTYhVi7qGQxIAbEgBgQA2JADIgBMSAWA2JADIgBMaC//vrrmGnTpn3rdrtHvV6vxufzje6J0FYbCASGUX7xyy+/HC1bQMlksq6kpESQlEqlUKlUeyRqW1xcLCoqKgQAl8sS0IwZM44fGRnZUFlZKSwWiwY7ogi7o2xPFAwGi4xGo7WsrExotdrF+DtSdoCwe04fHR3dUFNTI+bNm3fr3vZPpVJPVVVVCZ1Ot2TmzJnHyQ7QlClTTh0bG1tTXV0t5s6d++De9o/FYq9uBrQAgI+VpQ3C4lbRInFE7tzbvpMnT36ejqfJZJqbVzbI5XKdDV0AnZNOTqfzHLvdfs74+Pg1Go1mXV1dncBuetTv9x9qtVqPQJtdymazHQE7dGg4HH6jtrZWwBYtwW66FH2lc0nnvcDj8ZyRdUBDQ0OroH+gX7fTL6Qtz8PDw78ODAz83tbWJpqamkR3d/dCPCdQN3lPNDg4mECfxdSXxqCxdjUfCX3+gc1bmnVA5Hq3qLy8XJCNaWxsFPRr07O0jt5vfqZyj0Rt6XhRXxpDOi69pzm3r6OSHELWAS1atOgR6Cno8VWrVt2L7W1G3EKu3L1mzZq78f6hhQsXPozygGrzmA9hjnth22IKhUIgkBzB/3AX3j+B+qdg6x7JOqA07vinwsJCARtRlylDiiM8SnMiiPw4571YNBqtQPRL7rgzU4B6enrMarVaINb6MS8AbT5inRncQWb8KPkFyGw2TwC0cePGa2Ejbv79999PltatXbv2aNiTm1Bev379+gmpBJLU06kvxrgmjSeVByDkYrPIGyFVeExa197efgm5cZTkxs9PM+475J1wdJNyBjRzPwC9TYCQrMZlCwi52BSKVWbNmjXB/XZ2dl7c0tIiUP6FBZ+XJhd7k9IUvV4fZkAMiAExIAbEgBgQA2JADIgBMSAGxIAYUAYBrdkM6Nk0gC7fDEhgwRemAfTeZkALZAlo6tSph2Fx1bie8c+ZM+dmab++vr5zAMeCUqvRaM6Q1icSiXsbGhoCGFctL0AZEANiQAxIKr72MRqNHZkC1N/fb8qbi8NIJFJN9+S4em7IFCDclmhKSkoIUEE+AKosKCgQiHkmh8Phn0KhUAm+MVQcDNHYmK8ANmguzYlYqTjnAa1cufKx+vp6QbsI2z4jwlx0n0b3bffnLiDJJZ/dbrfg67AQSu/BFI5yyOFwGFKp1Ev8pf3+igExIAbEgBgQA2JALAbEgBgQA2JADIgBMSDWJly2untRJ8f7AAAAAElFTkSuQmCC);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  float: right;
+}
+
+.price{
+    margin-top: .5rem;
+}
+
+.num{
+  margin-top: .5rem;
+}
+
+.num-wrap{
+  text-align: center;
+  font-size: 1.5rem;
+  display: inline-block;
+}
+
+.num-minus,.num-add{
+  background-color: #ddd;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.num-buynum{
+  background-color: #FFF;
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  vertical-align: top;
+  min-width: 2.5rem;
+  display: inline-block;
+  border: .5px solid #ddd;
+  box-sizing: border-box;
+}
+
+.protect-bar{
+  height: 3.4rem;
+  line-height: 2.5rem;
+  width: 28rem;
+  margin: 0 auto;
+  background-color: #eef;
+  padding: .3rem;
+
+}
+.protect-bar img{
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
+.line-1{
+  width: 100%;
+  height: 1rem;
+}
+
+.all-price{
+  flex-grow: 2;
+  background-color: #fff;
+  color: #ff6700;
+  height: 100%;
+  line-height: 5rem;
+  font-size: 1.2rem;
+}
+
+.continue-buy{
+  flex-grow: 1;
+  background-color: #ccc;
+  color: #fff;
+  height: 100%;
+  line-height: 5rem;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.buy-goods{
+  flex-grow: 1;
+  background-color: #ff6700;
+  color: #fff;
+  height: 100%;
+  line-height: 5rem;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.all-price .text{
+  display: inline-block;
+  text-align: left;
+  height: 100%;
+  line-height: 5rem;
+  margin-left: .2rem;
+}
+
+.f_right{
+  float: right;
+  margin-right: 1rem;
+}

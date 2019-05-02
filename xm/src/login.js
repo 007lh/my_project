@@ -9,6 +9,10 @@ class Login extends React.Component{
     this.changeLoginText = this.changeLoginText.bind(this);
   }
 
+  componentWillMount(){
+    document.title= "小米 登陆页面";
+  }
+
   handleInputChange(event) {
     const target = event.target;
     const name = target.name;

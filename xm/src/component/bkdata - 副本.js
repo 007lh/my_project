@@ -67,7 +67,7 @@ const Data_category ={
                      color:["红色","黑色"],
                      rowprice:3299,
                      discountprice:2699,
-                     protect:[{pname:"全年意外保障服务",pprice:249},{pname:"全年碎屏保障服务",pprice:129}],
+                     protect:[{pname:"全年意外保障服务",pprice:"249元"},{pname:"全年碎屏保障服务",pprice:"129元"}],
                      info: ['「4GB+64GB，限时秒杀，立减150元」「6GB+64GB，限时秒杀，立减150元」「下单结算显示秒杀价」' ,
                             '  三星 AMOLED 全面屏 小屏旗舰 / 骁龙710处理器 / AI 超感光双摄 / 前置2000万柔光自拍']
                    }
@@ -85,7 +85,7 @@ const Data_category ={
                      color:["红色","黑色"],
                      rowprice:3299,
                      discountprice:2699,
-                     protect:[{pname:"全年意外保障服务",pprice:249},{pname:"全年碎屏保障服务",pprice:129}],
+                     protect:[{pname:"全年意外保障服务",pprice:"249元"},{pname:"全年碎屏保障服务",pprice:"129元"}],
                      info: ['「4GB+64GB，限时秒杀，立减150元」「6GB+64GB，限时秒杀，立减150元」「下单结算显示秒杀价」' ,
                             '  三星 AMOLED 全面屏 小屏旗舰 / 骁龙710处理器 / AI 超感光双摄 / 前置2000万柔光自拍']
                    }
@@ -103,7 +103,7 @@ const Data_category ={
                      color:["红色","黑色"],
                      rowprice:3299,
                      discountprice:2699,
-                     protect:[{pname:"全年意外保障服务",pprice:249},{pname:"全年碎屏保障服务",pprice:129}],
+                     protect:[{pname:"全年意外保障服务",pprice:"249元"},{pname:"全年碎屏保障服务",pprice:"129元"}],
                      info: ['「4GB+64GB，限时秒杀，立减150元」「6GB+64GB，限时秒杀，立减150元」「下单结算显示秒杀价」' ,
                             '  三星 AMOLED 全面屏 小屏旗舰 / 骁龙710处理器 / AI 超感光双摄 / 前置2000万柔光自拍']
                    }
@@ -121,7 +121,7 @@ const Data_category ={
                      color:["红色","黑色"],
                      rowprice:3299,
                      discountprice:2699,
-                     protect:[{pname:"全年意外保障服务",pprice:249},{pname:"全年碎屏保障服务",pprice:129}],
+                     protect:[{pname:"全年意外保障服务",pprice:"249元"},{pname:"全年碎屏保障服务",pprice:"129元"}],
                      info: ['「4GB+64GB，限时秒杀，立减150元」「6GB+64GB，限时秒杀，立减150元」「下单结算显示秒杀价」' ,
                             '  三星 AMOLED 全面屏 小屏旗舰 / 骁龙710处理器 / AI 超感光双摄 / 前置2000万柔光自拍']
                    }
@@ -139,7 +139,7 @@ const Data_category ={
                      color:["红色","黑色"],
                      rowprice:3299,
                      discountprice:2699,
-                     protect:[{pname:"全年意外保障服务",pprice:249},{pname:"全年碎屏保障服务",pprice:129}],
+                     protect:[{pname:"全年意外保障服务",pprice:"249元"},{pname:"全年碎屏保障服务",pprice:"129元"}],
                      info: ['「4GB+64GB，限时秒杀，立减150元」「6GB+64GB，限时秒杀，立减150元」「下单结算显示秒杀价」' ,
                             '  三星 AMOLED 全面屏 小屏旗舰 / 骁龙710处理器 / AI 超感光双摄 / 前置2000万柔光自拍']
                    }
@@ -156,7 +156,7 @@ const Data_category ={
                          color:["黑色"],
                          rowprice:4299,
                          discountprice:3699,
-                         protect:[{pname:"全年意外保障服务",pprice:249},{pname:"全年碎屏保障服务",pprice:129}],
+                         protect:[{pname:"全年意外保障服务",pprice:"249元"},{pname:"全年碎屏保障服务",pprice:"129元"}],
                          info: ['「4GB+64GB，限时秒杀，立减150元」「6GB+64GB，限时秒杀，立减150元」「下单结算显示秒杀价」' ,
                                 '  三星 AMOLED 全面屏 小屏旗舰 / 骁龙710处理器 / AI 超感光双摄 / 前置2000万柔光自拍']
                        }
@@ -173,7 +173,7 @@ const Data_category ={
                          color:["红色","黑色"],
                          rowprice:3299,
                          discountprice:2699,
-                         protect:[{pname:"全年意外保障服务",pprice:249},{pname:"全年碎屏保障服务",pprice:129}],
+                         protect:[{pname:"全年意外保障服务",pprice:"249元"},{pname:"全年碎屏保障服务",pprice:"129元"}],
                          info: ['「4GB+64GB，限时秒杀，立减150元」「6GB+64GB，限时秒杀，立减150元」「下单结算显示秒杀价」' ,
                                 '  三星 AMOLED 全面屏 小屏旗舰 / 骁龙710处理器 / AI 超感光双摄 / 前置2000万柔光自拍']
                        }
@@ -190,7 +190,7 @@ const Data_category ={
                          color:["红色","黑色"],
                          rowprice:3299,
                          discountprice:2699,
-                         protect:[{pname:"全年意外保障服务",pprice:249},{pname:"全年碎屏保障服务",pprice:129}],
+                         protect:[{pname:"全年意外保障服务",pprice:"249元"},{pname:"全年碎屏保障服务",pprice:"129元"}],
                          info: ['「4GB+64GB，限时秒杀，立减150元」「6GB+64GB，限时秒杀，立减150元」「下单结算显示秒杀价」' ,
                                 '  三星 AMOLED 全面屏 小屏旗舰 / 骁龙710处理器 / AI 超感光双摄 / 前置2000万柔光自拍']
                        }
@@ -207,7 +207,7 @@ const Data_category ={
                          color:["红色","黑色"],
                          rowprice:3299,
                          discountprice:2699,
-                         protect:[{pname:"全年意外保障服务",pprice:249},{pname:"全年碎屏保障服务",pprice:129}],
+                         protect:[{pname:"全年意外保障服务",pprice:"249元"},{pname:"全年碎屏保障服务",pprice:"129元"}],
                          info: ['「4GB+64GB，限时秒杀，立减150元」「6GB+64GB，限时秒杀，立减150元」「下单结算显示秒杀价」' ,
                                 '  三星 AMOLED 全面屏 小屏旗舰 / 骁龙710处理器 / AI 超感光双摄 / 前置2000万柔光自拍']
                        }
@@ -224,7 +224,7 @@ const Data_category ={
                          color:["红色","黑色"],
                          rowprice:3299,
                          discountprice:2699,
-                         protect:[{pname:"全年意外保障服务",pprice:249},{pname:"全年碎屏保障服务",pprice:129}],
+                         protect:[{pname:"全年意外保障服务",pprice:"249元"},{pname:"全年碎屏保障服务",pprice:"129元"}],
                          info: ['「4GB+64GB，限时秒杀，立减150元」「6GB+64GB，限时秒杀，立减150元」「下单结算显示秒杀价」' ,
                                 '  三星 AMOLED 全面屏 小屏旗舰 / 骁龙710处理器 / AI 超感光双摄 / 前置2000万柔光自拍']
                        }
@@ -242,7 +242,7 @@ const Data_category ={
                          color:["红色","黑色"],
                          rowprice:3299,
                          discountprice:2699,
-                         protect:[{pname:"全年意外保障服务",pprice:249},{pname:"全年碎屏保障服务",pprice:129}],
+                         protect:[{pname:"全年意外保障服务",pprice:"249元"},{pname:"全年碎屏保障服务",pprice:"129元"}],
                          info: ['「4GB+64GB，限时秒杀，立减150元」「6GB+64GB，限时秒杀，立减150元」「下单结算显示秒杀价」' ,
                                 '  三星 AMOLED 全面屏 小屏旗舰 / 骁龙710处理器 / AI 超感光双摄 / 前置2000万柔光自拍']
                        }
@@ -259,7 +259,7 @@ const Data_category ={
                        color:["红色","黑色"],
                        rowprice:3299,
                        discountprice:2699,
-                       protect:[{pname:"全年意外保障服务",pprice:249},{pname:"全年碎屏保障服务",pprice:129}],
+                       protect:[{pname:"全年意外保障服务",pprice:"249元"},{pname:"全年碎屏保障服务",pprice:"129元"}],
                        info: ['「4GB+64GB，限时秒杀，立减150元」「6GB+64GB，限时秒杀，立减150元」「下单结算显示秒杀价」' ,
                               '  三星 AMOLED 全面屏 小屏旗舰 / 骁龙710处理器 / AI 超感光双摄 / 前置2000万柔光自拍']
                      }
@@ -276,7 +276,7 @@ const Data_category ={
                        color:["红色","黑色"],
                        rowprice:3299,
                        discountprice:2699,
-                       protect:[{pname:"全年意外保障服务",pprice:249},{pname:"全年碎屏保障服务",pprice:129}],
+                       protect:[{pname:"全年意外保障服务",pprice:"249元"},{pname:"全年碎屏保障服务",pprice:"129元"}],
                        info: ['「4GB+64GB，限时秒杀，立减150元」「6GB+64GB，限时秒杀，立减150元」「下单结算显示秒杀价」' ,
                               '  三星 AMOLED 全面屏 小屏旗舰 / 骁龙710处理器 / AI 超感光双摄 / 前置2000万柔光自拍']
                      }
@@ -293,7 +293,7 @@ const Data_category ={
                        color:["红色","黑色"],
                        rowprice:3299,
                        discountprice:2699,
-                       protect:[{pname:"全年意外保障服务",pprice:249},{pname:"全年碎屏保障服务",pprice:129}],
+                       protect:[{pname:"全年意外保障服务",pprice:"249元"},{pname:"全年碎屏保障服务",pprice:"129元"}],
                        info: ['「4GB+64GB，限时秒杀，立减150元」「6GB+64GB，限时秒杀，立减150元」「下单结算显示秒杀价」' ,
                               '  三星 AMOLED 全面屏 小屏旗舰 / 骁龙710处理器 / AI 超感光双摄 / 前置2000万柔光自拍']
                      }
@@ -310,7 +310,7 @@ const Data_category ={
                       color:["红色","黑色"],
                       rowprice:3299,
                       discountprice:2699,
-                      protect:[{pname:"全年意外保障服务",pprice:249},{pname:"全年碎屏保障服务",pprice:129}],
+                      protect:[{pname:"全年意外保障服务",pprice:"249元"},{pname:"全年碎屏保障服务",pprice:"129元"}],
                       info: ['「4GB+64GB，限时秒杀，立减150元」「6GB+64GB，限时秒杀，立减150元」「下单结算显示秒杀价」' ,
                              '  三星 AMOLED 全面屏 小屏旗舰 / 骁龙710处理器 / AI 超感光双摄 / 前置2000万柔光自拍']
                     }
@@ -327,7 +327,7 @@ const Data_category ={
                       color:["红色","黑色"],
                       rowprice:3299,
                       discountprice:2699,
-                      protect:[{pname:"全年意外保障服务",pprice:249},{pname:"全年碎屏保障服务",pprice:129}],
+                      protect:[{pname:"全年意外保障服务",pprice:"249元"},{pname:"全年碎屏保障服务",pprice:"129元"}],
                       info: ['「4GB+64GB，限时秒杀，立减150元」「6GB+64GB，限时秒杀，立减150元」「下单结算显示秒杀价」' ,
                              '  三星 AMOLED 全面屏 小屏旗舰 / 骁龙710处理器 / AI 超感光双摄 / 前置2000万柔光自拍']
                     }
@@ -344,7 +344,7 @@ const Data_category ={
                       color:["红色","黑色"],
                       rowprice:3299,
                       discountprice:2699,
-                      protect:[{pname:"全年意外保障服务",pprice:249},{pname:"全年碎屏保障服务",pprice:129}],
+                      protect:[{pname:"全年意外保障服务",pprice:"249元"},{pname:"全年碎屏保障服务",pprice:"129元"}],
                       info: ['「4GB+64GB，限时秒杀，立减150元」「6GB+64GB，限时秒杀，立减150元」「下单结算显示秒杀价」' ,
                              '  三星 AMOLED 全面屏 小屏旗舰 / 骁龙710处理器 / AI 超感光双摄 / 前置2000万柔光自拍']
                     }
@@ -361,7 +361,7 @@ const Data_category ={
                       color:["红色","黑色"],
                       rowprice:3299,
                       discountprice:2699,
-                      protect:[{pname:"全年意外保障服务",pprice:249},{pname:"全年碎屏保障服务",pprice:129}],
+                      protect:[{pname:"全年意外保障服务",pprice:"249元"},{pname:"全年碎屏保障服务",pprice:"129元"}],
                       info: ['「4GB+64GB，限时秒杀，立减150元」「6GB+64GB，限时秒杀，立减150元」「下单结算显示秒杀价」' ,
                              '  三星 AMOLED 全面屏 小屏旗舰 / 骁龙710处理器 / AI 超感光双摄 / 前置2000万柔光自拍']
                     }

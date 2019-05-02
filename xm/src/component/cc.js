@@ -51,9 +51,9 @@ class CC extends React.Component {
 
   render() {
     const phoneData = Data_category["phone"].map((i)=>{return <PictureWrap key={i.name+"page1"} name={i.name} imgSrc={i.src} goodsid={i.id}/>});
-    const televisionData = Data_category["television"].map((i)=>{return <PictureWrap key={i.name} name={i.name} imgSrc={i.src}/>});
-    const computerData = Data_category["computer"].map((i)=>{return <PictureWrap key={i.name} name={i.name} imgSrc={i.src}/>});
-    const jiadianData = Data_category["jiadian"].map((i)=>{return <PictureWrap key={i.name} name={i.name} imgSrc={i.src}/>});
+    const televisionData = Data_category["television"].map((i)=>{return <PictureWrap key={i.name} name={i.name} imgSrc={i.src} goodsid={i.id}/>});
+    const computerData = Data_category["computer"].map((i)=>{return <PictureWrap key={i.name} name={i.name} imgSrc={i.src} goodsid={i.id}/>});
+    const jiadianData = Data_category["jiadian"].map((i)=>{return <PictureWrap key={i.name} name={i.name} imgSrc={i.src} goodsid={i.id}/>});
     return(
       <div className="categorycontent-wrap" id="testaddress">
           <Row className="clearfix">

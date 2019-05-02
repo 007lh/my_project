@@ -44,7 +44,7 @@ class GoodsInfo extends React.Component {
                 goods_data:this.props.data_info};
     //存放用户选择的参数
     this.choose_data={name:this.state.goods_data.name, price:this.state.goods_data.discountprice,
-                      pic:this.state.goods_data.pic};
+                      pic:this.state.goods_data.pic, id: this.props.goods_id, checked:true};//, id:this.props.match.params.id
     //初始化数据
     this.color_data;
     this.hitch_data;
@@ -53,13 +53,15 @@ class GoodsInfo extends React.Component {
   }
 
   protectClicked(k){
-    console.log("k",k,"protectstatus",this.state.protectstatus,"btnprotect",this.state.btnprotect);
+    //console.log("k",k,"protectstatus",this.state.protectstatus,"btnprotect",this.state.btnprotect);
     if(!this.state.protectstatus){
-      this.setState({btnprotect: k,protectstatus: true});
-      this.choose_data["protect"] = this.state.goods_data.protect[k];
+      this.setState({btnprotect: k,protectstatus: true},()=>{
+        this.choose_data["protect"] = this.state.goods_data.protect[k];
+      });
     }else{
-      this.setState({btnprotect: true,protectstatus: false});
-      this.choose_data["protect"] = "";
+      this.setState({btnprotect: true,protectstatus: false},()=>{
+        this.choose_data["protect"] = "";
+      });
     }
   }
 
@@ -80,17 +82,20 @@ class GoodsInfo extends React.Component {
   }
 
   addOne(){
-    this.setState({buynum: this.state.buynum+1});
+    this.setState({buynum: this.state.buynum+1},()=>{
+      this.choose_data["buynum"] = this.state.buynum;
+    });
   }
 
   minusOne() {
     if(this.state.buynum>1){
-      this.setState({buynum: this.state.buynum-1});
+      this.setState({buynum: this.state.buynum-1},()=>{
+        this.choose_data["buynum"] = this.state.buynum;
+      });
     }
   }
 
   joinCart(){
-    console.log("here");
     //DataPost(this.choose_data, "/cart");
     let data = localStorage.getItem("userId");
     let choose_dataString = JSON.stringify(this.choose_data);
@@ -98,14 +103,13 @@ class GoodsInfo extends React.Component {
       let chooseed_data = JSON.parse(data);
       chooseed_data.push(choose_dataString);
       localStorage.removeItem("userId")
-      console.log("chooseed_data",chooseed_data);
+    //  console.log("chooseed_data",chooseed_data);
       let chooseed_dataString = JSON.stringify(chooseed_data);
       localStorage.setItem("userId",chooseed_dataString);
     }else{
       let arr = [];
       arr.push(choose_dataString);
       let array_data = JSON.stringify(arr);
-      console.log("???",arr);
       localStorage.setItem("userId",array_data);
     }
   }
@@ -115,6 +119,7 @@ class GoodsInfo extends React.Component {
 componentWillMount(){
     //this.summary_info = this.state.goods_data.name + this.state.goods_data.vname0+this.state.goods_data.color[0];
   this.choose_data["color"] = this.state.goods_data.color[0];
+  this.choose_data["buynum"] = this.state.buynum;
   this.choose_data["vname"] = this.state.goods_data["vname0"];
   this.choose_data["vname_type"] = this.state.goods_data["vname_type1"];
 //注意：初始化数据，不能将含有运算符的式子放在componentWillMount，下面就是个错误的例子。
@@ -129,12 +134,12 @@ componentDidUpdate() {
     document.getElementById("gielse").className = "gielse";
   }
   //由于setstate执行后不会立刻改变state(state批量处理)，所以放这里确保state都已经改变
- this.choose_data["buynum"] = this.state.buynum;
+ //this.choose_data["buynum"] = this.state.buynum;
 }
 
 
 componentDidMount(){
-  //console.log("data",this.state.btncolor);
+//  console.log("data",this.props);
 }
 
   render() {
@@ -149,8 +154,8 @@ componentDidMount(){
       this.hitch_data = this.state.goods_data.protect.map((v, i)=>{
        return (
        <div className={"gielse-item " + ((this.state.btnprotect===i)?"goods-clicked":"")} key={'gielse'+i} onClick={()=>{this.protectClicked(i)}}>
-         <span className="gielse-pname">{v.pname}</span>
-         <span className="gielse-pprice">{v.pprice}</span>
+         <span className="gielse-pname">{v.pname}元</span>
+         <span className="gielse-pprice">{v.pprice}元</span>
        </div>
      )});
    }else{
