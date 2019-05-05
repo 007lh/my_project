@@ -4,7 +4,7 @@ import './css/else.css'
 class Login extends React.Component{
   constructor(props){
     super(props);
-    this.state={logintext:true};
+    this.state={logintext:true, telError:null,passWordError:null};
     this.handleInputChange = this.handleInputChange.bind(this);
     this.changeLoginText = this.changeLoginText.bind(this);
   }
@@ -26,6 +26,30 @@ class Login extends React.Component{
       logintext: !state.logintext
     }))
   }
+
+  telCheck(e){
+    let event = e || window.event;
+    let target = e.target || e.srcElement;
+    let val = target.value;
+    let reg = /^1[34578]\d{9}$/;
+    if(reg.test(val)==false){
+      this.setState({telError:"手机号码输入不正确！！！"});
+    }else{
+      this.setState({telError:""});
+    }
+  }
+
+  passWordCheck(){
+    let event = e || window.event;
+    let target = e.target || e.srcElement;
+    let val = target.value;
+    let pwreg = /^\w{6,15}$/;
+    if(pwreg.test(val)==false){
+      this.setState({passWordError:"请输入6-15位数字或字母的密码！"});
+    }else{
+      this.setState({passWordError:""});
+    }
+  }
   render(){
     return(
       <div>
@@ -41,12 +65,18 @@ class Login extends React.Component{
                         <label style={{display:"block","fontWeight":"200"}}>
                             <div className="input-style">
                               <span style={{padding:"1rem 10px 1rem",color: "#9b9b9b",display:this.state.logintext? "block" : "none"}}>{this.state.logintext?`+86>` : ""}</span>
-                              <input className="input-tel" name="phoneNumber" type="tel" placeholder={this.state.logintext? "手机号码" : "邮箱/小米"} onChange={this.handleInputChange}/>
+                              <input className="input-tel" name="phoneNumber" type="tel"
+                                     placeholder={this.state.logintext? "手机号码" : "邮箱/小米"}
+                                     onChange={this.handleInputChange}
+                                     onBlur={()=>{this.telCheck()}}/>
                             </div>
                         </label>
                         <label style={{display:"block",fontWeight:"200"}}>
                             <div className="input-style">
-                                <input className="input-tel" name="passWord" type="number" placeholder="短信验证码" onChange={this.handleInputChange}/>
+                                <input className="input-tel" name="passWord" type="number"
+                                       placeholder={this.state.logintext? "短信验证码" : "密码"}
+                                       onChange={this.handleInputChange}
+                                       onBlur={()=>{this.passWordCheck()}}/>
                             </div>
                         </label>
                     </div>

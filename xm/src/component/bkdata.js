@@ -130,7 +130,7 @@ const Data_category ={
            id:"008",
            src:"//i8.mifile.cn/b2c-mimall-media/03dfeb60ec59ba6738a58f33b819ddb1!120x120.png",
            name:"红米6A",
-           version:{ name:"红米S2",
+           version:{ name:"红米6A",
                      pic: "https://i8.mifile.cn/b2c-mimall-media/b50f609fbb788de87108e75c3051345e.jpg",
                      vname0:"4GB+32GB ",
                      vname1:"6GB+128GB ",
@@ -143,7 +143,25 @@ const Data_category ={
                      info: ['「4GB+64GB，限时秒杀，立减150元」「6GB+64GB，限时秒杀，立减150元」「下单结算显示秒杀价」' ,
                             '  三星 AMOLED 全面屏 小屏旗舰 / 骁龙710处理器 / AI 超感光双摄 / 前置2000万柔光自拍']
                    }
-        }],
+        },
+        {
+          id:"009",
+          src:"//i8.mifile.cn/b2c-mimall-media/03dfeb60ec59ba6738a58f33b819ddb1!120x120.png",
+          name:"红米6X",
+          version:{ name:"红米6X",
+                    pic: "https://i8.mifile.cn/b2c-mimall-media/b50f609fbb788de87108e75c3051345e.jpg",
+                    vname0:"4GB+32GB ",
+                    vname1:"6GB+128GB ",
+                    vname_type0:"全网通",
+                    vname_type1:"移动版",
+                    color:["红色","黑色"],
+                    rowprice:3299,
+                    discountprice:2699,
+                    protect:[{pname:"全年意外保障服务",pprice:249},{pname:"全年碎屏保障服务",pprice:129}],
+                    info: ['「4GB+64GB，限时秒杀，立减150元」「6GB+64GB，限时秒杀，立减150元」「下单结算显示秒杀价」' ,
+                           '  三星 AMOLED 全面屏 小屏旗舰 / 骁龙710处理器 / AI 超感光双摄 / 前置2000万柔光自拍']
+                  }
+       }],
   television:[{src:"https://i8.mifile.cn/b2c-mimall-media/bf2dc71cbf6fa8413b7ade09719155a0!120x120.jpg",
                id:"101",
                name:"75英寸 电视4",

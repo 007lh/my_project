@@ -81,21 +81,21 @@ class HomeContent extends React.Component {
         <div style={{display:(this.state.btnshowblock==="Recommend"?"block":"none")}}>
           <ImgCarousel/>
           <div className="cells_auto_fill multi_cell" style={{width:"31.25rem",height:"6.4rem"}}>
-              <Link to="/goods/001" className="exposure items1">
+              <Link to="/" className="exposure items1">
                 <img src="//i8.mifile.cn/v1/a1/6d64ef02-bb5c-da49-45cb-7d6861885b29!144x152.webp"/>
               </Link>
-              <a className="exposure items1">
+              <Link to="/" className="exposure items1">
                 <img src="https://i8.mifile.cn/v1/a1/d29e748c-0177-5b4c-d2ab-401070713bac!144x152.webp"/>
-              </a>
-              <a className="exposure items1">
+              </Link>
+              <Link to="/" className="exposure items1">
                 <img src="//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/9173298cc0297ce1803c43485e525358.jpg?thumb=1&amp;w=144&amp;h=152"/>
-              </a>
-              <a className="exposure items1">
+              </Link>
+              <Link to="/" className="exposure items1">
                 <img src="//i8.mifile.cn/v1/a1/e560f98a-48bb-25a1-daa2-72bff8cc7c69!144x152.webp"/>
-              </a>
-              <a className="exposure items1">
+              </Link>
+              <Link to="/" className="exposure items1">
                 <img src="//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/3df8f589521ea019b3b2d6231af17926.png?thumb=1&amp;w=144&amp;h=152"/>
-              </a>
+              </Link>
             </div>
 
             <div className="cells_auto_fill multi_cell" style={{width:"30rem",height:"22.2rem"}}>
@@ -104,12 +104,12 @@ class HomeContent extends React.Component {
                 <img style={{width:"15rem",height:"22.2rem"}} src='https://i8.mifile.cn/v1/a1/1bc285b1-2a9e-00de-57bf-23d322094a74!358x508.webp'/>
               </Link>
 
-              <a className="items2" style={{width:"15rem",height:"11rem",left:"15.7rem"}}>
+              <Link to="/" className="items2" style={{width:"15rem",height:"11rem",left:"15.7rem"}}>
                 <img style={{width:"15rem",height:"11rem"}} src='https://i8.mifile.cn/v1/a1/9929be9b-7a4e-9f80-5f37-0c9e3848d48f!358x252.webp'/>
-              </a>
-              <a className="items2" style={{width:"15rem",height:"11rem",left:"15.7rem",top:"11.2rem"}}>
+              </Link>
+              <Link to="/goods/101" className="items2" style={{width:"15rem",height:"11rem",left:"15.7rem",top:"11.2rem"}}>
                 <img style={{width:"15rem",height:"11rem"}} src='https://i8.mifile.cn/v1/a1/0f1662cf-40c9-fe38-b05e-7a59788a1e28!358x252.webp'/>
-              </a>
+              </Link>
             </div>
         </div>
         {/*手机*/}
